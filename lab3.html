@@ -21,6 +21,10 @@
             margin: 0;
             padding: 0;
         }
+        h3{
+            position: relative;
+            left: 100px;
+        }
 
         header {
             background-color: rgb(0, 221, 255);
@@ -126,10 +130,11 @@
             color: rgba(rgb(92, 22, 163));
         }
 
-        #box5, #box6 {
+        #box5,
+        #box6 {
             border: 2px solid black;
-            height: 250px;
-            width: 300px;
+            height: 350px;
+            width: 700px;
             background-size: cover;
             background-repeat: no-repeat;
             animation-duration: 5s;
@@ -139,21 +144,37 @@
 
         #box5 {
             animation-name: cardbox;
+            position: relative;
+            left: 200px;
         }
 
         @keyframes cardbox {
-            0% { background-image: url("bdy card.jpg"); }
-            100% { background-image: url("admit card.jpg"); }
+            0% {
+                background-image: url("bdy card.jpg");
+            }
+
+            100% {
+                background-image: url("admit card.jpg");
+            }
         }
 
         #box6 {
-            animation-name:projectcard; 
+            animation-name: projectcard;
+            position: relative;
+            top: 70px;
+            left:200px
         }
 
         @keyframes projectcard {
-            0% { background-image: url("calorie card.jpg"); }
-            100% { background-image: url("student card.jpg"); }
+            0% {
+                background-image: url("calorie.jpg");
+            }
+
+            100% {
+                background-image: url("foodie.jpg");
+            }
         }
+
         #CONTACT {
             background-color: white;
             padding: 20px;
@@ -162,89 +183,151 @@
             box-shadow: 0 4px 15px -2px gray;
             text-align: center;
         }
+
         #backtop {
             text-align: center;
             margin-bottom: 20px;
-            color:white;
-            padding:20px;
+            color: white;
+            padding: 20px;
             height: 5px;
             width: 70px;
             background-color: royalblue;
-            ;
+            position: sticky;
+            bottom: 10px;
+            right: 60px;
         }
-  
+
+        #socialmedia {
+            background-color: white;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px -2px gray;
+        }
+
+        #button2 {
+            background-color: #0066cc;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: large;
+            text-align: right;
+            position: fixed;
+            right: 40px;
+            bottom: auto;
+            position: absolute;
+            z-index: 100;
+
+
+        }
+
+        h1 {
+            animation: colorChange 4s infinite;
+            position: relative;
+            top: 60px;
+            left: 200px;
+            size: large;
+        }
+
+        @keyframes colorChange {
+            0% {color: black;}
+
+            25% {color: rgb(255, 230, 0);}
+
+            50% {color: rgb(0, 204, 255);}
+
+            75% {color: rgb(0, 255, 153);}
+
+            100% {color: rgb(181, 60, 175);}
+        }
     </style>
 </head>
 
-<body>
-    <div class="box3" id="box1">
-        <nav>
-            <ul>
-                <nav id="nav">
-                    <pre>
+<body id="bodytop"></body>
+<div class="box3" id="box1">
+    <nav>
+        <ul>
+            <nav id="nav">
+                <pre>
                 <a href="#ABOUT" class="a">ABOUT</a>    <a href="#PROJECT" class="a">PROJECT</a>    <a href="#SKILLS" class="a">SKILLS</a>    <a href="#CONTACT"class="a">CONTACT</a>     <a href="#social media" class="a">SOCIAL MEDIA</a>    
             </pre>
-                </nav>
-            </ul>
-        </nav>
-    </div>
-    </header>
-    <h2> </h2>
-    <div id="intro">
-        <p> Hello!!! I am web Development student .</p>
-        <p> This is my personal portfolio website </p>
-    </div>
-    <div id="img">
-        <img src="priyanshi.jpg.jpeg" alt="priyanshi.jpg.jpeg" width="100" height="100"
-            style="border-radius:50%;background-color: azure;" />
-    </div>
-    <div id="ABOUT">
-        <h2>ABOUT </h2>
-        <ul>
-            <p> My name is Priyanshi Bisht .I am currently pursuing B.Tech in Computer Science and Engineering from K.R
-                Mangalam University.
-                <br /><br />
-                I am passionate about learning Web Development and building creative solutions.
-            </p>
+            </nav>
         </ul>
-    </div>
-    <div id="SKILLS">
-        <h2> Technical Skills </h2>
-        <div class="Skills">
-            <div class="box" id="box2">HTML</div>
-            <div class="box" id="box3">CSS</div>
-            <div class="box" id="box4">PYTHON</div>
-        </div>
-    </div>
-    <div id="PROJECT">
-        <h2> PROJECTS</h2>
-        <div class="project">
-            <div class="box1" id="box5"></div>
-            <div class="box2" id="box6"></div>
-        </div>
-    </div>
-    <br/><br/>
+    </nav>
+</div>
+</header>
+<h1 class="title">Hello!!! I am web Development student </h4>
 
-    <h3> CONTACT DETAILS </h3>
-    <div id ="CONTACT">
-         <label for ="name"> name:</label>
-        <input id="name" type=""text/>
-        <br/><br/>
-        <label> email id </label>
-        <input type="email"/>
-        <br/><br/>
-        <label> Message:</label>
-        <textarea rows="10" cols="30"></textarea>
-        <br/><br/>
-        <button type="Send"> Send</button>
-    </div>
-    <br><br/>
-    <div id = "backtop">
-    <a href\="#backtop" top> Backtotop</a>
-    </div>
+    <h1 class="title"> This is my personal portfolio website </h5>
+        <div id="img">
+            <img src="photo.jpg" alt="photo" width="100" height="100"
+                style="border-radius:50%;background-color: azure;" />
+        </div>
+        <div id="ABOUT">
+            <h2>ABOUT </h2>
+            <ul>
+                <p> My name is Priyanshi Bisht .I am currently pursuing B.Tech in Computer Science and Engineering from
+                    K.R
+                    Mangalam University.
+                    <br /><br />
+                    I am passionate about learning Web Development and building creative solutions.
+                </p>
+            </ul>
+        </div>
+        <div id="SKILLS">
+            <h2> Technical Skills </h2>
+            <div class="Skills">
+                <div class="box" id="box2">HTML</div>
+                <div class="box" id="box3">CSS</div>
+                <div class="box" id="box4">PYTHON</div>
+            </div>
+        </div>
+        <div id="PROJECT">
+            <h2> PROJECTS</h2>
+            <div class="project">
+                <div class="box1" id="box5"></div>
+                <div class="box7" id="box6"></div>
+            </div>
+        </div>
+        <br /><br />
 
-</body>
+        <h3> CONTACT DETAILS </h3>
+        <div id="CONTACT">
+            <label for="name"> name:</label>
+            <input id="name" type="" text />
+            <br /><br />
+            <label> email id </label>
+            <input type="email" />
+            <br /><br />
+            <label> Message:</label>
+            <textarea rows="10" cols="30"></textarea>
+            <br /><br />
+            <button type="Send"> Send</button>
+        </div>
+        <br><br />
+        <a href="#bodytop" input type="back at top" value="Back at Top" class="nav-btn" id="button2">Back to Top</a>
+
+        </div>
+        <br /><br />
+        <div id="social media">
+            <h2> Social Media Links </h2>
+            <ul>
+                <li><a href="https://www.instagram.com/priyanshi_bisht_/"> Instagram</a></li>
+                <li><a href="https://www.linkedin.com/in/Priyanshi Bisht/"> LinkedIn</a></li>
+                <li><a href="https://github.com/priyanshi220383-max/web-dev-unit2-assigment"> GitHub</a></li>
+            </ul>
+        </div>
+
+        </body>
 
 
 
 </html>
+    
+
+  
+
+ 
+  
